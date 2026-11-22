@@ -24,7 +24,7 @@ app = Flask(__name__)
 
 
 
-client = MongoClient('mongodb+srv://madhukumara:madhu@cluster0.hq4oe.mongodb.net/')
+client = MongoClient('mongodb+srv://mongodb.net/')
 db = client['demo5']
 collection = db['data5']
 # initialize the app with the extension
