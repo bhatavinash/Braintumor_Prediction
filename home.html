@@ -1,0 +1,104 @@
+{% block content %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+    <link href="{{ url_for('static', filename="fonts/icomoon/style.css") }}" rel="stylesheet">
+
+    
+
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+   
+
+    <!-- Bootstrap CSS -->
+    
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    <!-- Style -->
+    
+    <link href="{{ url_for('static', filename='css/st.css') }}" rel="stylesheet">
+    
+
+    <title>Website Menu </title>
+  </head>
+  <body>
+
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">BR</a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active"><a href="/"><span>Home</span></a></li>
+                <li><a href="register"><span>Register</span></a></li>
+                <li><a href="login"><span>Login</span></a></li>
+                
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    
+    <div class="hero" style="background-image: url('static/images/img1.jpg');">
+      <div class="content">
+        <h1 class="heading">BRAIN TUMOR DETECTION</h1>
+        <div class="mainbox">
+          <div class="box">
+            <h1>Gliomas</h1>
+            <p>"These are tumors that originate from glial cells, which are the cells that support and nourish the neurons in the brain. Gliomas are the most common type of brain tumor and can be either low-grade (slow-growing) or high-grade (fast-growing)".</p>
+          </div>
+          <div class="box">
+            <h1>Meningiomas</h1>
+            <p>"These are tumors that originate from the meninges, which are the membranes that cover and protect the brain and spinal cord. Meningiomas are usually benign and slow-growing, but they can be dangerous if they grow large enough to put pressure on the brain".</p>
+
+          </div>
+          <div class="box">
+            <h1>pituitary</h1>
+            <p>"These are tumors that originate from the pituitary gland, which is a small gland located at the base of the brain that produces hormones that regulate various bodily functions. Pituitary tumors can be benign or malignant and can cause a variety of symptoms".</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+   
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+
+    
+
+    
+    {% endblock %}
+  </body>
+</html>
